@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{ /*box-level*/
+
+            /*display: inline; Faz alteração*/
+
+            background-color: lightslategray;
+            height: 300px;
+            width: 300px;
+            /*
+            border-width:10px;
+            border-style: solid;
+            border-color: darkgreen;
+            */
+
+            border:10px solid darkgreen;/*essa linha subistituui todas essas outras de forma shorthand*/
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            padding:10px 10px 10px 10px;/*Mesma coisa acaontece aqui*/
+
+            /*padding:10px; e se os valores forem iguais basta colocar uma vez o valor*/
+
+           /* padding:10 20px;Colocando dois valores ele altera da senguinte forma, 10 emcima 10 em baixo e 20 na esquerda e na direita*/
+
+           /*
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            */
+            margin: 20px 20px 40px 20px;/*Se quiser sentralizar no meio deverá colocar nas margin da direita e esquerda auto*/
+
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+
+            outline: 5px dashed salmon;
+           
+         }
+
+        a{/*inline-level*/
+
+           /* display: block; Também faz a alteração*/
+
+           border:10px solid red;
+           
+            padding: 10px ;
+            
+
+                }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas</h1>
+    <p>"Parágrafo também são exemplo de box-level , mas os "<a href="#">links são exemplo de caixas inline-level.</a> Vamos ver como funciona</p>
+</body>
+</html>

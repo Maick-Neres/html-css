@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="MNJ.ico" type="image/x-icon">
+</head>
+<body>
+  <center> <h1>Imagens dinâmicas</h1></center><!--(center)Não semântica e não estar mais em uso-->
+ 
+<p>Tente abrir esse site em varios dispositivos diferente ou simplimente aumente e diminua o tamanho do seu navegador.</p>
+
+
+<picture>
+    <source media="(max-width:700px )" 
+    srcset="imagens/foto-p.png" type="image/png">
+<source media="(max-width:1000px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagens flexivel">
+</picture>
+<!--IMPORTANTE A ORDEM DAS TAGS ,PRIMEIRA ,SEGUNDA E TERCEIRA por tamahos...(FOTOS)-->
+<h1>Reproduzindo um áudio</h1>
+<p>Vamos aprender a reproduzir áudios em html5.</p>
+
+<audio src="medias/Djtaz.mp3"controls autoplay ></audio>
+
+<audio preload="metadata" controls>
+    <!--    outras formas de reproduzir e também ultilizar outos formatos de áudio(mpeg{que é o mp3}, ogg, wav)-->
+
+    <source src="medias/happy-mistake.mp3" type="audio/mpeg">
+
+ <source src="medias/happy-mistake.ogg" type="audio/ogg">
+
+ <source src="medias/happy-mistake.wav" type="audio/wav"><!--São arquivos muito pesados-->
+
+ <p>infelizmnete seu navegador não consegue reproduzir áudio <a href="medias/guanacast-33.mp3">clique aqui para baixar o arquivo mp3</a>
+</p>
+
+</audio>
+<audio src="medias/guanacast-33.mp3"autoplay controls ></audio>
+
+</body>
+</html>
