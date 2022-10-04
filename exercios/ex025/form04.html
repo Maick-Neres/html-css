@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h1>Exemplo de formulário</h1>
+
+  <form action="cadastro.php" method="get">
+    <fieldset>
+      <legend>Dados pessoais</legend>
+    <p>
+      <label for="iemail">Gmail</label>
+      <input type="email" name="email" id="iemail" required autocomplete="email">
+    </p>
+    <p>
+      <label for="itel">Tell</label>
+      <input type="tel" name="tell" id="itel" autocomplete="tel-national" required>
+    </p>
+    <!--
+      Estudar mais sobre RegEX para a ultilizaçãio do  pattern=""
+      Agrupamento de campos com fidset e legened para dar meio que um título
+      também da pra usar max-length em email e tell sem problema -->
+    <p>
+      <input type="submit" value="enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </fieldset>
+  </form>
+</body>
+</html>

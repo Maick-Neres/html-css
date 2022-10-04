@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <form action=".php" method="get" >                   
+
+    <p>
+      <label for="icolor">Cor</label>
+      <input type="color" name="color" id="icolor" value="#00ff00">                                                       
+    </p>
+    <p>
+      <label for="inivel"> nivel de satisfação</label>
+      <input type="range" name="nivel" id="inivel" min="1"
+      max="5" value="1" oninput="ival.innerHTML=Number(inivel.value)">
+      <output id="ival">
+        5
+      </output>
+    </p>
+    <p>
+  <input type="submit" name="text" id="itext">
+  <input type="reset" value="Enviar">
+    </p>
+    <p>
+      <label for="ifoto"></label>
+      <input type="file" name="foto" id="ifoto">
+    </p>
+  </form>
+</body>
+</html>
