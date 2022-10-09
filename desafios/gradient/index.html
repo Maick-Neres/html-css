@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: fundo 10s ease infinite  ;
+
+  }
+
+  @keyframes fundo {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  section h1{
+   font-size: 3em;
+   color: white;
+  }
+
+  .bnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bnt button{
+    width:200px;
+    padding: 12px;
+    background-color: transparent;
+    color:white;
+    border-radius: 5px;
+    border: .5px solid white;
+  }
+  .bnt button:hover{
+    color:black;
+    background-color: white;
+    cursor: pointer;
+
+  }
+
+  .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name p{
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .name p:hover{
+    cursor: pointer;
+  }
+
+  </style>
+</head>
+<body>
+  <main>
+      <section>
+        <h1>Pure CSS Gradient Background Animation</h1>
+        <div class="bnt">
+        <button>SOURCE CODE</button>
+        <button>FULL SCREEN</button>
+      </div>
+      <div class="name">
+          <p>— Made by  Maick Neres —</p>
+     </div>
+   </section>
+  </main>
+</body>
+</html>
